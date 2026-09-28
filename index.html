@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7fbff" />
+    <meta
+      name="description"
+      content="السكب — استوديو صوت عربي سريع للسياح والمسافرين."
+    />
+    <title>السكب — تحويل الصوت</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="screen-shield" id="screenShield" aria-hidden="true">
+      <div class="shield-card">
+        <span class="shield-icon">◌</span>
+        <strong>المحتوى محمي</strong>
+        <span>ستظهر النتيجة عند العودة إلى الصفحة.</span>
+      </div>
+    </div>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="السكب">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 42 42" role="img">
+              <path d="M8 14.5h26l-3.1 20H11.1z" />
+              <path d="M14 14.5 17.2 8h7.6l3.2 6.5M12.2 20h17.6" />
+              <path d="M15.3 27h11.4" />
+            </svg>
+          </span>
+          <span class="brand-word">السكب</span>
+        </a>
+
+        <div class="topbar-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="تبديل المظهر">
+            <span class="theme-icon sun">☼</span>
+            <span class="theme-icon moon">☾</span>
+          </button>
+          <button class="cart-button" id="cartButton" type="button" aria-label="فتح السلة">
+            <span class="cart-symbol">⌑</span>
+            <span class="cart-label">السلة</span>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow"><i></i> ترجمة صوتية بلا تعقيد</span>
+            <h1>تكلّم بلغتك،<br /><em>وسنقرّب المسافة.</em></h1>
+            <p>
+              حوّل صوتك إلى لغة أخرى بسرعة ووضوح، لتتواصل بسهولة أينما أخذتك
+              الرحلة.
+            </p>
+            <div class="hero-proof">
+              <span class="proof-dot"></span>
+              <span>أول 7 أصوات مجانية</span>
+              <span class="proof-separator"></span>
+              <span>يدعم لغات العالم</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="hero-moon">
+              <svg viewBox="0 0 260 260">
+                <circle class="moon-fill" cx="130" cy="130" r="95" />
+                <path class="moon-line" d="M61 99c22-20 47-30 76-31M52 126c25-9 52-10 78-3M74 167c27 9 53 8 79-3M112 59c9 18 12 37 8 57M151 69c-10 17-14 36-11 56M171 126c-10 14-14 31-11 47M107 177c-5-13-6-28-2-43" />
+                <path class="moon-line thin" d="M88 82c-4 13-3 26 3 39M181 93c-14 8-24 19-30 34M86 145c14 3 26 9 37 19" />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="studio-card" aria-labelledby="studioTitle">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">استوديو السكب</span>
+              <h2 id="studioTitle">ما الذي تريد قوله؟</h2>
+            </div>
+            <div class="quota-badge">
+              <span class="quota-ring" id="quotaRing">
+                <svg viewBox="0 0 42 42">
+                  <circle class="quota-track" cx="21" cy="21" r="17" />
+                  <circle class="quota-progress" id="quotaProgress" cx="21" cy="21" r="17" />
+                </svg>
+                <strong id="quotaNumber">7</strong>
+              </span>
+              <span><b id="quotaLabel">محاولات مجانية</b><small>متاحة الآن</small></span>
+            </div>
+          </div>
+
+          <div class="studio-grid">
+            <div class="input-panel">
+              <div class="panel-topline">
+                <span class="panel-kicker">01</span>
+                <h3>أدخل صوتاً</h3>
+                <span class="panel-hint">من الاستديو أو الملفات</span>
+              </div>
+
+              <div class="moon-recorder" id="moonRecorder">
+                <span class="recorder-flash"></span>
+                <button class="moon-button" id="recordButton" type="button" aria-label="ابدأ التسجيل">
+                  <svg viewBox="0 0 160 160" aria-hidden="true">
+                    <circle class="moon-disc" cx="80" cy="80" r="57" />
+                    <path class="moon-detail" d="M40 60c15-14 33-20 53-21M35 79c17-7 35-7 54-2M49 107c18 6 36 5 54-2M71 37c6 13 8 27 5 41M97 44c-7 12-10 25-8 39M110 80c-7 11-10 24-8 36M68 113c-3-11-3-22 1-33" />
+                    <path class="moon-detail detail-thin" d="M55 47c-3 9-2 18 2 27M118 56c-10 6-17 14-21 25M54 91c10 2 18 6 26 13" />
+                  </svg>
+                  <span class="moon-pulse"></span>
+                </button>
+                <span class="recorder-label" id="recorderLabel">اضغط للتحدث</span>
+              </div>
+
+              <div class="source-tools">
+                <label class="upload-control">
+                  <input id="audioFile" type="file" accept="audio/*" />
+                  <span class="tool-icon">↥</span>
+                  <span id="fileLabel">اختيار ملف صوتي</span>
+                </label>
+                <button class="clear-source" id="clearSource" type="button">مسح</button>
+              </div>
+
+              <label class="transcript-label" for="transcript">أو اكتب الجملة للتجربة</label>
+              <textarea id="transcript" rows="3" placeholder="مثال: أين أقرب محطة قطار؟"></textarea>
+            </div>
+
+            <div class="output-panel">
+              <div class="panel-topline">
+                <span class="panel-kicker">02</span>
+                <h3>اختر اللغة</h3>
+                <span class="panel-hint">ثم استمع للنتيجة</span>
+              </div>
+
+              <div class="language-row">
+                <div class="select-wrap">
+                  <select id="languageSelect" aria-label="اللغة المستهدفة">
+                    <option value="en">الإنجليزية</option>
+                    <option value="fr">الفرنسية</option>
+                    <option value="es">الإسبانية</option>
+                    <option value="de">الألمانية</option>
+                    <option value="it">الإيطالية</option>
+                    <option value="tr">التركية</option>
+                    <option value="ru">الروسية</option>
+                    <option value="zh">الصينية</option>
+                    <option value="ja">اليابانية</option>
+                    <option value="ko">الكورية</option>
+                    <option value="pt">البرتغالية</option>
+                    <option value="hi">الهندية</option>
+                    <option value="nl">الهولندية</option>
+                    <option value="el">اليونانية</option>
+                    <option value="sv">السويدية</option>
+                    <option value="ar">العربية</option>
+                  </select>
+                </div>
+                <span class="language-arrow">←</span>
+                <span class="source-language">العربية</span>
+              </div>
+
+              <div class="result-stage" id="resultStage">
+                <div class="empty-result" id="emptyResult">
+                  <span class="sound-wave small-wave"><i></i><i></i><i></i><i></i><i></i></span>
+                  <p>ستظهر النتيجة هنا بعد تحويل الصوت</p>
+                </div>
+                <div class="result-success hidden" id="resultSuccess">
+                  <div class="success-stars" aria-hidden="true">✦　·　✧　·　✦</div>
+                  <div class="result-icon">✓</div>
+                  <div class="result-copy">
+                    <span class="result-label">تم تجهيز الصوت</span>
+                    <strong id="resultText">Your translated voice is ready.</strong>
+                  </div>
+                  <div class="waveform" id="waveform" aria-hidden="true">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                  <audio id="resultAudio" controls preload="metadata"></audio>
+                  <button class="primary-button compact" id="addToCartButton" type="button">
+                    <span>أضف إلى السلة</span><span>＋</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="progress-area hidden" id="progressArea">
+                <div class="progress-meta">
+                  <span id="progressStatus">نجهّز الصوت...</span>
+                  <strong id="progressPercent">0%</strong>
+                </div>
+                <div class="progress-track"><span id="progressBar"></span></div>
+                <small>كل دقيقة صوت تحتاج تقريباً 3 ثوانٍ للمعالجة</small>
+              </div>
+
+              <button class="primary-button generate-button" id="generateButton" type="button">
+                <span class="button-spark">✦</span>
+                <span>تحويل الصوت الآن</span>
+                <span class="button-arrow">←</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="travel-note">
+          <span class="travel-note-icon">✈</span>
+          <p>تطبيق السكب مفيد جداً للسياح والمسافرين، مسهّلاً طريقة التواصل بين الناس.</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>السكب · صوتك يصل أبعد</span>
+        <span>خصوصية بسيطة، تواصل أوضح</span>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-backdrop" id="drawerBackdrop"></div>
+      <div class="drawer-content">
+        <div class="drawer-header">
+          <div>
+            <span class="eyebrow">ملفاتك الجاهزة</span>
+            <h2>سلة السكب <span id="drawerCount">0</span></h2>
+          </div>
+          <button class="close-drawer" id="closeDrawer" type="button" aria-label="إغلاق السلة">×</button>
+        </div>
+        <div class="cart-list" id="cartList">
+          <div class="cart-empty" id="cartEmpty">
+            <span>⌑</span>
+            <p>السلة فارغة حالياً</p>
+            <small>حوّل صوتاً ثم أضفه هنا لتسمعه أو تشتريه.</small>
+          </div>
+        </div>
+        <div class="plans" id="plans">
+          <p class="plans-title">اختر خطتك بعد انتهاء المجاني</p>
+          <div class="plan-grid">
+            <a class="plan-card" href="https://wa.me/963992147669?text=مرحباً، أريد الاشتراك الشهري في السكب" target="_blank" rel="noreferrer">
+              <span>شهري</span><strong>$25</strong><small>اشتراك شهري</small>
+            </a>
+            <a class="plan-card featured" href="https://wa.me/963992147669?text=مرحباً، أريد الاشتراك السنوي في السكب" target="_blank" rel="noreferrer">
+              <span>سنوي</span><strong>$299</strong><small>اشتراك سنوي</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="login-overlay hidden" id="loginOverlay">
+      <div class="login-card">
+        <span class="brand-mark small-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42"><path d="M8 14.5h26l-3.1 20H11.1z" /><path d="M14 14.5 17.2 8h7.6l3.2 6.5" /></svg>
+        </span>
+        <span class="eyebrow">مساحة خاصة</span>
+        <h2>مرحباً بك في السكب</h2>
+        <p>أدخل كلمة المرور للمتابعة.</p>
+        <form id="loginForm">
+          <input id="passwordInput" type="password" autocomplete="current-password" placeholder="كلمة المرور" required />
+          <button class="primary-button" type="submit">دخول <span>←</span></button>
+          <small class="login-error" id="loginError"></small>
+        </form>
+      </div>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
